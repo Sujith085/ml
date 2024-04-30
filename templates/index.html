@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ML API</title>
+    {% comment %} <style>
+        body {
+          background-image:url('static/car.aviff');
+          background-size:100%;
+        }
+        </style> {% endcomment %}
 </head>
 <body>
-    <style>
-        body {
-          background-image: url('car.avif');
-          background-size: 100%;
-        }
-        </style>
     <div class="login">
         <h1>Car Price Analysis</h1>
-        <!-- <img src="car.avif" alt="Fiat500_Car_Img" width="400px" height="300px"> -->
+        <img src="static/car.aviff" alt="Img" width="400px" height="300px"> 
         <form action="{{url_for('predict')}}" method="post">
             <input type="number" name="engine power" placeholder="Engine power"><br>
             <input type="number" name="age and age" placeholder="Age and Age" required>><br>
